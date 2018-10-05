@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>student ID Card</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+
+            display: flex;
+            background: gray;
+
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            background-color: #f9f9f9;
+            width: 350px;
+            height: 218px;
+            margin: auto;
+            /* border: 1px solid rgba(220, 220, 220, 0.7); */
+        }
+
+        .card-header {
+            background-image: linear-gradient(to right, rgb(245, 128, 81) 20%, rgb(189, 60, 20));
+            background-clip: border-box;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            padding: 20px 10px;
+            color: rgba(240, 240, 240, 1);
+            font-size: 0.9rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .card-header>.logo {
+            flex-basis: 30%;
+        }
+
+        .card-header>.logo>img {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        .card-body {
+            flex: 1;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            font-size: 0.8rem;
+            color: rgba(10, 10, 10, 0.9);
+            font-weight: 400;
+            /* justify-content:  */
+        }
+
+        .card-body>.photo-id {
+            flex-basis: 35%;
+            margin-right: 10px;
+            /* justify-content: space-between; */
+        }
+
+        .photo-id>img {
+            display: block;
+            width: 100%;
+
+        }
+
+        .card-body>.student-info {
+            flex: 1;
+            display: flex;
+            /* align-items: flex-end; */
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .student-info>p {
+            font-weight: 500;
+            display: flex;
+            margin-bottom: 12px;
+            border-bottom: 2px solid rgba(200, 200, 200, 1);
+        }
+
+        .student-info>p:last-child {
+            margin-bottom: 0;
+        }
+
+        .student-info-label {
+            font-weight: 600;
+            /* margin-right: 10px; */
+            flex-basis: 25%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="card-header">
+
+            <div class="logo">
+                <img src="jcc-logo.png" alt="JCC Logo">
+            </div>
+            <h3>Student ID</h3>
+        </div>
+        <div class="card-body">
+            <div class="photo-id">
+                <img src="camper.jpeg" alt="Camper Passport Size Photo">
+            </div>
+            <div class="student-info">
+                <p><span class="student-info-label"> Name: </span><span>Omar Jasseh</span></p>
+                <p><span class="student-info-label">Course:</span><span>Programming Foundation</span></p>
+                <p><span class="student-info-label">Level:</span><span>Beginner</span></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
